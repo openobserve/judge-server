@@ -15,7 +15,7 @@ docker run -d \
   -e O2_JUDGE_PROVIDER=openai \
   -e O2_JUDGE_API_KEY=sk-... \
   -e O2_JUDGE_MODEL=gpt-4o-mini \
-  openobserve/eval-judges:latest
+  openobserve/judge-server:latest
 ```
 
 ## Supported providers
@@ -54,7 +54,7 @@ docker run -d -p 8000:8000 \
   -e O2_JUDGE_PROVIDER=anthropic \
   -e O2_JUDGE_API_KEY=sk-ant-... \
   -e O2_JUDGE_MODEL=claude-3-5-sonnet-20241022 \
-  openobserve/eval-judges:latest
+  openobserve/judge-server:latest
 ```
 
 **Local Ollama:**
@@ -66,7 +66,7 @@ docker run -d -p 8000:8000 \
   -e O2_JUDGE_API_KEY=unused \
   -e O2_JUDGE_MODEL=llama3 \
   -e O2_JUDGE_URL=http://host.docker.internal:11434 \
-  openobserve/eval-judges:latest
+  openobserve/judge-server:latest
 ```
 
 **AWS Bedrock:**
@@ -80,7 +80,7 @@ docker run -d -p 8000:8000 \
   -e AWS_ACCESS_KEY_ID=... \
   -e AWS_SECRET_ACCESS_KEY=... \
   -e AWS_REGION_NAME=us-east-1 \
-  openobserve/eval-judges:latest
+  openobserve/judge-server:latest
 ```
 
 ## Environment variables
