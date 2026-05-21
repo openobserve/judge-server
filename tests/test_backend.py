@@ -24,7 +24,7 @@ from judge_server.config import ConfigError, Settings
 @pytest.mark.parametrize(
     ("provider", "model", "expected"),
     [
-        ("openai", "gpt-4o-mini", "gpt-4o-mini"),
+        ("openai", "gpt-5-mini", "gpt-5-mini"),
         ("openai_compatible", "llama-3.1-70b-instruct", "openai/llama-3.1-70b-instruct"),
         ("anthropic", "claude-3-5-sonnet-20241022", "anthropic/claude-3-5-sonnet-20241022"),
         ("gemini", "gemini-1.5-pro", "gemini/gemini-1.5-pro"),
@@ -45,7 +45,7 @@ def _settings(**overrides) -> Settings:
         "auth_token": "t",
         "backend": "openai",
         "backend_api_key": "sk-test",
-        "backend_model": "gpt-4o-mini",
+        "backend_model": "gpt-5-mini",
         "backend_url": None,
         "backend_timeout_seconds": 10.0,
         "host": "127.0.0.1",

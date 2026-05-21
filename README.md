@@ -14,7 +14,7 @@ docker run -d \
   -e O2_JUDGE_AUTH_TOKEN=$(openssl rand -hex 24) \
   -e O2_JUDGE_PROVIDER=openai \
   -e O2_JUDGE_API_KEY=sk-... \
-  -e O2_JUDGE_MODEL=gpt-4o-mini \
+  -e O2_JUDGE_MODEL=gpt-5-mini \
   openobserve/judge-server:latest
 ```
 
@@ -136,7 +136,7 @@ Content-Type: application/json
   "value": 0.15,
   "metadata": {
     "reason": "The output's claim that Paris is the capital is supported by the input.",
-    "model": "gpt-4o-mini",
+    "model": "gpt-5-mini",
     "elapsed_ms": 1245
   }
 }
@@ -185,7 +185,7 @@ upstream LLM — upstream reachability surfaces on the first real
   "status": "ok",
   "version": "0.1.0",
   "backend": "openai",
-  "model": "gpt-4o-mini"
+  "model": "gpt-5-mini"
 }
 ```
 
